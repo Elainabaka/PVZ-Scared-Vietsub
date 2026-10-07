@@ -1,0 +1,5 @@
+# Backup cua dev, khong dua len release
+_backup/
+*.bak
+*.new
+*.tmp
