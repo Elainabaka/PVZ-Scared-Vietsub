@@ -33,6 +33,18 @@ Tải về, giải nén, chạy `PVZ-Scared.exe` là chơi ngay — không cần
   của game nên chữ có dấu (ế, ộ, ữ, đ, ă, ơ, ư…) hiện đầy đủ, không còn ô vuông/mất chữ.
 - Tiêu đề cửa sổ game đã đổi sang tiếng Việt.
 
+## 🆕 Có gì mới ở bản v1.3 (bản hoàn chỉnh)
+
+- **Chống cắt dấu trên/dưới trong font** (lỗi ẩn khó thấy): 11 font được vá metric
+  (`head.yMax`, `usWinAscent`/`usWinDescent`) theo bounding-box thật của **chữ tiếng Việt** —
+  dấu chồng của ế, ộ, ử khòng còn nguy cơ bị "mất đầu dấu" ở renderer theo chuẩn WinGDI.
+  Glyph ghép cũng được tính lại bbox (trước đó còn giữ giá trị cũ theo font gốc).
+- **Vá nớt tên 6 màn mở đầu còn sót tiếng Trung**: `序章-1…5, 41` → `Màn 0-1…5, 41`,
+  mô tả `无` → `Không` (đồng bộ với 35 màn còn lại).
+- **Rà soát toàn bộ lần cuối trước khi phát hành**: 325 chuỗi ngôn ngữ khớp 1:1 với bản nhúng
+  trong game, 0 sót chữ Trung trong chuỗi hiển thị, 0 lỗi placeholder/thị định dạng/Unicode
+  (NFC), phụ đề radio + nhật ký + dữ liệu màn đều là tiếng Việt.
+
 ## 🆕 Có gì mới ở bản v1.2 (so với v1.1)
 
 - **Sửa lỗi font "chữ to chữ bé"**: 8 font trang trí (fzkt1, 方正艺黑, 方正简体剪纸,
