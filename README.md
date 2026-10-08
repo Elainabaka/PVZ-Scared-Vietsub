@@ -33,14 +33,29 @@ Tải về, giải nén, chạy `PVZ-Scared.exe` là chơi ngay — không cần
   của game nên chữ có dấu (ế, ộ, ữ, đ, ă, ơ, ư…) hiện đầy đủ, không còn ô vuông/mất chữ.
 - Tiêu đề cửa sổ game đã đổi sang tiếng Việt.
 
+## 🆕 Có gì mới ở bản v1.1 (so với v1.0.1)
+
+- **Merge glyph tiếng Việt vào font gốc**: 8 font trang trí của game (fzkt1, 方正艺黑,
+  方正简体剪纸, ark-pixel, PerfectDOS, fzcq, fzjz1, fangzhengkatong) giờ đã có sẵn
+  chữ Việt đúng kiểu chữ gốc — hết hiện tượng chữ Việt rớt sang font khác (lệch kiểu)
+  ở menu Cài đặt, màn hình tên người chơi, nhật ký…
+- **Màn cảnh báo đầu game đọc ngon**: chữ disclaimer hết dấu rời (`l ò ng` → `lòng`),
+  credit UP chủ Bilibili giữ nguyên ý nghĩa (bỏ nickname chữ Tàu vì font game không vẽ được).
+- **Vẽ lại 8 ảnh nút/banner chữ Tàu** theo phong cách gốc: `CHUẨN BỊ…`, `SẴN SÀNG…`,
+  `TRỒNG CÂY!` (mở màn), `ĐỢT CUỐI!`, `ĂN!`, banner `SINH TỒN`, biển `CHÀO MỪNG, BẠN!`.
+- Vá chuỗi lẻ: ngoặc Tàu `（）` → `()`, `dồn dame` → `dồn sát thương`, `——` → `—`,
+  thay chuỗi test rác bằng tiếng Việt.
+
 ## ⚠️ Vài điểm còn chưa hoàn hảo (sẽ sửa ở bản sau)
 
+- Logo chữ Tàu ở menu chính được **giữ nguyên** (nhận diện thương hiệu của team gốc).
 - Nút **Bỏ qua** (Skip) ở màn nhật ký/cốt truyện vẫn là ảnh nút tiếng Trung `跳过`
   (chữ vẽ sẵn trong texture, cần vẽ lại ảnh — không phải lỗi font).
-- Vài dòng chữ trang trí (kiểu font Tàu) có dấu sẽ rớt sang font dự phòng nên nhìn
-  hơi khác kiểu một chút — vẫn đọc rõ, không mất chữ.
+- Chữ khắc trên bia mộ / bùa giấy và nickname thành viên team (chữ Tàu trang trí)
+  được giữ nguyên theo bản gốc.
 - Tên riêng của team phát triển và các nickname (Bilibili/TikTok) được **giữ nguyên**
-  để tôn trọng tác giả gốc.
+  để tôn trọng tác giả gốc (nickname UP chủ trong game đã gọn lại thành
+  "tác giả gốc" vì font game không vẽ được chữ Tàu — credit đầy đủ ở đây).
 
 ## 🙏 Credit
 
