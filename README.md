@@ -33,6 +33,25 @@ Tải về, giải nén, chạy `PVZ-Scared.exe` là chơi ngay — không cần
   của game nên chữ có dấu (ế, ộ, ữ, đ, ă, ơ, ư…) hiện đầy đủ, không còn ô vuông/mất chữ.
 - Tiêu đề cửa sổ game đã đổi sang tiếng Việt.
 
+## 🆕 Có gì mới ở bản v1.2 (so với v1.1)
+
+- **Sửa lỗi font "chữ to chữ bé"**: 8 font trang trí (fzkt1, 方正艺黑, 方正简体剪纸,
+  ark-pixel, PerfectDOS, fzcq, fzjz1, fangzhengkatong) được **dựng lại từ font gốc**:
+  glyph tiếng Việt giờ scale đúng theo unitsPerEm từng font, advance/căn giữa chuẩn,
+  hết hiện tượng chữ Việt nhỏ hơn/thấp hơn chữ Latin, hết chồng chữ.
+- **Vá 6 font bị hỏng bảng `vmtx`** (fonttools báo lỗi đọc) — loại bỏ bảng hỏng.
+- **Hết ô vuông (tofu)**: bỏ kaomoji `(｡･ω･｡)ﾉ♡` cuối màn cảnh báo (font game không có
+  glyph `｡ ﾉ ♡`) → thay bằng `(^_^)`. Log game không còn cảnh báo thiếu ký tự.
+- **Sửa chuỗi hiển thị sai**: `Tỷ lệ nhân năng` → `Tỷ lệ nắng`, `Bắt chớp mắt` →
+  `Bật chớp mắt`, `Nhấn đúp thẻ đổi trạng thái mạng` → `Nhấn đúp thẻ để bật/tắt mang theo`,
+  `quyền quẹt thẻ` → `quyền trả tiền`, `kích phát` → `gây ra`.
+- **Dịch nốt chữ Anh sót trong credit**: `Art` → `Mỹ thuật`, `Code` → `Lập trình`,
+  `F-Scr` → `Kịch bản`.
+- **Dọn chuỗi test rác**: `Mô tả thử…`, `Thử thử…`, `Nội dung thử nghiệm…`, `Tên thử`,
+  `Nhập văn bản` → thay bằng câu tiếng Việt hoàn chỉnh.
+- Chuỗi UI cứng & file ngôn ngữ nhúng (`Resources/Json/Languages/zh.json`) đã được vá
+  đồng bộ với `External/Language/vi.json`.
+
 ## 🆕 Có gì mới ở bản v1.1 (so với v1.0.1)
 
 - **Merge glyph tiếng Việt vào font gốc**: 8 font trang trí của game (fzkt1, 方正艺黑,
@@ -48,6 +67,9 @@ Tải về, giải nén, chạy `PVZ-Scared.exe` là chơi ngay — không cần
 
 ## ⚠️ Vài điểm còn chưa hoàn hảo (sẽ sửa ở bản sau)
 
+- Hộp thoại **"版本检测失败 / 无法连接到服务器…"** khi máy offline (game check server lúc mở)
+  là chuỗi **hardcode trong code game** (metadata IL2CPP đã mã hoá) — không thể dịch bằng
+  cách vá asset, cần hook runtime ở bản sau.
 - Logo chữ Tàu ở menu chính được **giữ nguyên** (nhận diện thương hiệu của team gốc).
 - Nút **Bỏ qua** (Skip) ở màn nhật ký/cốt truyện vẫn là ảnh nút tiếng Trung `跳过`
   (chữ vẽ sẵn trong texture, cần vẽ lại ảnh — không phải lỗi font).
